@@ -1,0 +1,10 @@
+.\port.o: ..\..\lib\RTOS\ARM_CM3\port.c
+.\port.o: ..\..\lib\RTOS\include\FreeRTOS.h
+.\port.o: C:\Keil\ARM\ARMCC\bin\..\include\stddef.h
+.\port.o: ..\..\lib\RTOS\include\projdefs.h
+.\port.o: ..\..\lib\config\FreeRTOSConfig.h
+.\port.o: ..\..\lib\RTOS\include\portable.h
+.\port.o: ..\..\lib\RTOS\ARM_CM3\portmacro.h
+.\port.o: ..\..\lib\RTOS\include\mpu_wrappers.h
+.\port.o: ..\..\lib\RTOS\include\task.h
+.\port.o: ..\..\lib\RTOS\include\list.h

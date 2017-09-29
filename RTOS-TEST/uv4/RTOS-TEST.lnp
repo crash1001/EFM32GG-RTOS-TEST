@@ -1,0 +1,20 @@
+--cpu Cortex-M3
+".\startup_efm32gg.o"
+".\system_efm32gg.o"
+".\main.o"
+".\em_gpio.o"
+".\em_cmu.o"
+".\em_assert.o"
+".\em_core.o"
+".\em_emu.o"
+".\em_system.o"
+".\em_rtc.o"
+".\em_rmu.o"
+".\list.o"
+".\tasks.o"
+".\heap_4.o"
+".\port.o"
+--strict --scatter ".\RTOS-TEST.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\RTOS-TEST.map" -o .\RTOS-TEST.axf

@@ -1,0 +1,11 @@
+.\heap_4.o: ..\..\lib\RTOS\memory-manage\heap_4.c
+.\heap_4.o: C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h
+.\heap_4.o: ..\..\lib\RTOS\include\FreeRTOS.h
+.\heap_4.o: C:\Keil\ARM\ARMCC\bin\..\include\stddef.h
+.\heap_4.o: ..\..\lib\RTOS\include\projdefs.h
+.\heap_4.o: ..\..\lib\config\FreeRTOSConfig.h
+.\heap_4.o: ..\..\lib\RTOS\include\portable.h
+.\heap_4.o: ..\..\lib\RTOS\ARM_CM3\portmacro.h
+.\heap_4.o: ..\..\lib\RTOS\include\mpu_wrappers.h
+.\heap_4.o: ..\..\lib\RTOS\include\task.h
+.\heap_4.o: ..\..\lib\RTOS\include\list.h
