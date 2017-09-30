@@ -12,6 +12,7 @@
 #include "em_cmu.h"
 #include "em_core.h"
 
+
 /*-----------------------------------------------------------*/
 
 /*Definations */
@@ -21,11 +22,19 @@ const uint16_t LED1 = 3;
 const uint16_t PB1 = 9;
 const uint16_t PB2 = 10;
 
+//Constant Values for Using Internal Temperature ADC
+const float thermometerGradient = -6.3;
+#define thermCalTemp = ((DEVINFO->CAL & _DEVINFO_CAL_TEMP_MASK) >> _DEVINFO_CAL_TEMP_SHIFT);
+#define thermCalValue = ((DEVINFO->ADC0CAL2 & _DEVINFO_ADC0CAL2_TEMP1V25_MASK) >> _DEVINFO_ADC0CAL2_TEMP1V25_SHIFT);
+
 //uint16_t counter = 0;
 /*-----------------------------------------------------------*/
 
 static void prvSetupHardware( void );
-void GPIOInitialize( void );
+
+void GPIO_Setup( void );
+void ADC_Setup( void );
+
 void vBlinky1( void *pvParameters );
 void vBlinky2( void *pvParameters );
 void GPIO_ODD_IRQHandler( void );
@@ -55,10 +64,14 @@ int main( void )
 static void prvSetupHardware( void )
 {
 	CHIP_Init();
+	
 	SystemCoreClockUpdate();
 	
 	SWO_Setup();				//Serial Wire Debug Out Setup
-	GPIOInitialize();
+	
+	GPIO_Setup();
+	
+	ADC_Setup();
 	
 //	vTaskDelay(1000);
 
@@ -66,7 +79,7 @@ static void prvSetupHardware( void )
 
 /*-----------------------------------------------------------*/
 
-void GPIOInitialize( void )	{
+void GPIO_Setup( void )	{
 	
 	//Enable Clock For GPIO
 	CMU_ClockEnable(cmuClock_GPIO, true);
@@ -96,6 +109,13 @@ void GPIOInitialize( void )	{
 //	GPIO_IntConfig(gpioPortB, PB2, false, true, true);
 }	
 
+void ADC_Setup()	{
+	
+	//Enable Clock for ADC0
+	CMU_ClockEnable(cmuClock_ADC0, true);
+	
+	
+}
 
 /*-----------------------------------------------------------*/
 
@@ -106,7 +126,7 @@ void vBlinky1( void *pvParameters ) {
 	
 	itmPrintln(pvParameters);
 		
-	vTaskDelay(1000);
+	vTaskDelay(100);
 	
 	vTaskDelete(NULL);
 }
