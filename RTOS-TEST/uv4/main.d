@@ -8,6 +8,8 @@
 .\main.o: ..\..\lib\RTOS\include\mpu_wrappers.h
 .\main.o: ..\..\lib\RTOS\include\task.h
 .\main.o: ..\..\lib\RTOS\include\list.h
+.\main.o: ..\..\lib\ITM-EFM\ITM.h
+.\main.o: C:\Keil\ARM\ARMCC\bin\..\include\stdio.h
 .\main.o: C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\em_device.h
 .\main.o: C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg980f1024.h
 .\main.o: ..\..\lib\CMSIS\Include\core_cm3.h

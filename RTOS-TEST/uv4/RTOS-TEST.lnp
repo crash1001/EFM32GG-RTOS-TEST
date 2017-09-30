@@ -2,6 +2,7 @@
 ".\startup_efm32gg.o"
 ".\system_efm32gg.o"
 ".\main.o"
+".\itm.o"
 ".\em_gpio.o"
 ".\em_cmu.o"
 ".\em_assert.o"

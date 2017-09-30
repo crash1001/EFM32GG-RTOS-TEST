@@ -306,7 +306,7 @@ void SystemHFXOClockSet(uint32_t freq)
  *****************************************************************************/
 void SystemInit(void)
 {
-	 SystemCoreClockGet();
+//	 SystemCoreClockGet();
 }
 
 
