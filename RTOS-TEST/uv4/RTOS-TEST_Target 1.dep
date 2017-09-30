@@ -56,7 +56,7 @@ I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_dmactrl.h)(0x58EB441A)
 I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_uart.h)(0x58EB441A)
 I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_af_ports.h)(0x58EB441A)
 I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_af_pins.h)(0x58EB441A)
-F (..\src\main.c)(0x59CE7BAE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\..\lib\emlib\inc -I..\..\lib\config -I..\..\lib\RTOS\include -I..\..\lib\RTOS\ARM_CM3 -I..\..\lib\CMSIS\Include -I..\..\..\..\EFM32-demo-codes\lib\emdrv\gpiointerrupt\inc-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\EnergyMicro\EFM32GG-DEFM32GG980F1024-o .\main.o --omf_browse .\main.crf --depend .\main.d)
+F (..\src\main.c)(0x59CF046D)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\..\lib\emlib\inc -I..\..\lib\config -I..\..\lib\RTOS\include -I..\..\lib\RTOS\ARM_CM3 -I..\..\lib\CMSIS\Include -I..\..\..\..\EFM32-demo-codes\lib\emdrv\gpiointerrupt\inc-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\EnergyMicro\EFM32GG-DEFM32GG980F1024-o .\main.o --omf_browse .\main.crf --depend .\main.d)
 I (..\..\lib\RTOS\include\FreeRTOS.h)(0x57E39BDD)
 I (C:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7E4F8)
 I (..\..\lib\RTOS\include\projdefs.h)(0x57E39BDD)
