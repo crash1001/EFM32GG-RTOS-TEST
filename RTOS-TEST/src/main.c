@@ -10,7 +10,7 @@
 #include "em_cmu.h"
 #include "em_core.h"
 #include "em_adc.h"
-
+#include "segmentlcd.h"
 
 /*-----------------------------------------------------------*/
 
@@ -34,6 +34,7 @@ const uint16_t PB2 = 10;
 static void prvSetupHardware( void );
 void GPIO_Setup( void );
 void ADC_Setup( void );
+void LCD_Setup( void );
 
 //RTOS TASK Functions
 void vBlinky1( void *pvParameters );
@@ -80,6 +81,7 @@ static void prvSetupHardware( void )
 	
 	ADC_Setup();
 	
+	LCD_Setup();
 //	vTaskDelay(1000);
 
 }
@@ -177,6 +179,10 @@ void ADC_Setup()	{
 	
 }
 
+void LCD_Setup() {
+	/*Enable LCD without Voltage BOOst*/
+	SegmentLCD_Init(false);	
+}
 /*-----------------------------------------------------------*/
 
 void vBlinky1( void *pvParameters ) {
@@ -216,9 +222,16 @@ void vDisplayTemp( void *pvParameters ) {
 	
 	temp = thermCalTemp - (thermCalValue - adcResult)*1250/(4096*THERMOMETER_GRADIENT);
 	
-	itmPrint("Temperature is ");
-	itmPrintNum(temp);
-	itmPrint("\n");
+	SegmentLCD_Write("TEMPERATURE");
+	SegmentLCD_Number(temp);
+	SegmentLCD_Symbol(LCD_SYMBOL_DEGC,1);
+	
+	vTaskDelay(2000);
+	
+	SegmentLCD_AllOff();
+//	itmPrint("Temperature is ");
+//	itmPrintNum(temp);
+//	itmPrint("\n");
 	
 	vTaskDelete(NULL);
 }

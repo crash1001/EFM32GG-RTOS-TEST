@@ -75,3 +75,6 @@
 .\main.o: ..\..\lib\emlib\inc\em_core.h
 .\main.o: ..\..\lib\emlib\inc\em_common.h
 .\main.o: ..\..\lib\emlib\inc\em_adc.h
+.\main.o: ..\..\lib\drivers\segmentlcd.h
+.\main.o: ..\..\lib\config\segmentlcdconfig.h
+.\main.o: ..\..\lib\emlib\inc\em_lcd.h

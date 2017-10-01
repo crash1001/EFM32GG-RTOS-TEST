@@ -9,18 +9,12 @@ Project File Date:  09/29/2017
 <h2>Output:</h2>
 Build target 'Target 1'
 compiling main.c...
-..\src\main.c(32): warning:  #1295-D: Deprecated declaration vBlinky2 - give arg types
-  void vBlinky2();
-..\src\main.c(123): warning:  #177-D: variable "pcTaskName" was declared but never referenced
-        const char *pcTaskName = "Blinky us running\r\n";
-..\src\main.c(134): warning:  #177-D: variable "pcTaskName" was declared but never referenced
-        const char *pcTaskName = "Blinky us running\r\n";
-..\src\main.c(154): warning:  #1-D: last line of file ends without a newline
+..\src\main.c(264): warning:  #1-D: last line of file ends without a newline
         
-..\src\main.c: 4 warnings, 0 errors
+..\src\main.c: 1 warning, 0 errors
 linking...
-Program Size: Code=11216 RO-data=252 RW-data=112 ZI-data=28416  
-".\RTOS-TEST.axf" - 0 Error(s), 4 Warning(s).
+Program Size: Code=23016 RO-data=1200 RW-data=112 ZI-data=28416  
+".\RTOS-TEST.axf" - 0 Error(s), 1 Warning(s).
 Load "D:\\Firmware-Projects\\STK3700\\RTOS-TEST\\RTOS-TEST\\uv4\\RTOS-TEST.axf" 
 Set JLink Project File to "D:\Firmware-Projects\STK3700\RTOS-TEST\RTOS-TEST\uv4\JLinkSettings.ini"
 * JLink Info: Device "EFM32GG980F1024" selected (1026 KB flash, 128 KB RAM).
@@ -43,7 +37,7 @@ ROMTableAddr = 0xE00FF003
 Target info:
 ------------
 Device: EFM32GG980F1024
-VTarget = 3.305V
+VTarget = 3.303V
 State of Pins: 
 TCK: 0, TDI: 0, TDO: 1, TMS: 1, TRES: 1, TRST: 1
 Hardware-Breakpoints: 6
@@ -55,44 +49,51 @@ Erase Done.
 Programming Done.
 Verify OK.
 Application running ...
-ice: EFM32GG980F1024
-VTarget = 3.305V
-State of Pins: 
-TCK: 0, TDI: 0, TDO: 1, TMS: 1, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Application running ...
-compiling main.c...
-..\src\main.c(32): warning:  #1295-D: Deprecated declaration vBlinky2 - give arg types
-  void vBlinky2();
-..\src\main.c(61): error:  #169: expected a declaration
-  }
-..\src\main.c(106): warning:  #12-D: parsing restarts here after previous syntax error
-        NVIC_EnableIRQ(GPIO_ODD_IRQn);
-..\src\main.c(114): error:  #40: expected an identifier
-        GPIO_IntConfig(gpioPortB, PB1, false, true, true);
-..\src\main.c(114): error:  #40: expected an identifier
-        GPIO_IntConfig(gpioPortB, PB1, false, true, true);
-..\src\main.c(114): error:  #40: expected an identifier
-        GPIO_IntConfig(gpioPortB, PB1, false, true, true);
-..\src\main.c(114): warning:  #77-D: this declaration has no storage class or type specifier
-        GPIO_IntConfig(gpioPortB, PB1, false, true, true);
-..\src\main.c(114): error:  #92: identifier-list parameters may only be used in a function definition
-        GPIO_IntConfig(gpioPortB, PB1, false, true, true);
-..\src\main.c(114): error:  #147: declaration is incompatible with "void GPIO_IntConfig(GPIO_Port_TypeDef, unsigned int, bool, bool, bool)" (declared at line 1104 of "..\..\lib\emlib\inc\em_gpio.h")
-        GPIO_IntConfig(gpioPortB, PB1, false, true, true);
-..\src\main.c(116): error:  #169: expected a declaration
-  }     
-..\src\main.c(166): warning:  #1-D: last line of file ends without a newline
-  void xTimerCreateTimerTask(void){}
-..\src\main.c(166): warning: At end of source:  #12-D: parsing restarts here after previous syntax error
-..\src\main.c(29): error:  #114: function "prvSetupHardware" was referenced but not defined
-  static void prvSetupHardware( void );
-..\src\main.c: 5 warnings, 8 errors
-"..\src\main.c" - 8 Error(s), 5 Warning(s).
+..\lib\drivers\segmentlcd.c(642): error:  #20: identifier "EFM_Display" is undefined
+        bit = EFM_Display.Number[digit].bit[i];
+..\..\lib\drivers\segmentlcd.c(826): error:  #20: identifier "EFM_Display" is undefined
+        bit = EFM_Display.Number[digit].bit[i];
+..\..\lib\drivers\segmentlcd.c(881): error:  #20: identifier "EFM_Display" is undefined
+        bit = EFM_Display.Text[index].bit[i];
+..\..\lib\drivers\segmentlcd.c(927): error:  #20: identifier "EFM_Display" is undefined
+          bit = EFM_Display.TopBlocks[index].bit[i];
+..\..\lib\drivers\segmentlcd.c(947): error:  #20: identifier "EFM_Display" is undefined
+          bit = EFM_Display.BotBlocks[index].bit[i];
+..\..\lib\drivers\segmentlcd.c(155): warning:  #177-D: variable "a" was declared but never referenced
+  static const MCU_DISPLAY a = EFM_DISPLAY_DEF;
+..\..\lib\drivers\segmentlcd.c: 1 warning, 15 errors
+".\RTOS-TEST.axf" - 15 Error(s), 1 Warning(s).
+Target not created
+
+        .bit[4] = 17, .bit[5] = 17, .bit[6] = 17, .bit[7] = 17,\
+..\..\lib\drivers\segmentlcd.c(181): error:  #29: expected an expression
+        .bit[4] = 17, .bit[5] = 17, .bit[6] = 17, .bit[7] = 17,\
+..\..\lib\drivers\segmentlcd.c(181): error:  #29: expected an expression
+        .bit[4] = 17, .bit[5] = 17, .bit[6] = 17, .bit[7] = 17,\
+..\..\lib\drivers\segmentlcd.c(182): error:  #29: expected an expression
+        .com[8] = 3, .com[9] = 2, .com[10] = 4, .com[11] = 6,\
+..\..\lib\drivers\segmentlcd.c(182): error:  #29: expected an expression
+        .com[8] = 3, .com[9] = 2, .com[10] = 4, .com[11] = 6,\
+..\..\lib\drivers\segmentlcd.c(182): error:  #29: expected an expression
+        .com[8] = 3, .com[9] = 2, .com[10] = 4, .com[11] = 6,\
+..\..\lib\drivers\segmentlcd.c(182): error:  #29: expected an expression
+        .com[8] = 3, .com[9] = 2, .com[10] = 4, .com[11] = 6,\
+..\..\lib\drivers\segmentlcd.c(183): error:  #29: expected an expression
+        .bit[8] = 18, .bit[9] = 18, .bit[10] = 18, .bit[11] = 18,\
+..\..\lib\drivers\segmentlcd.c(183): error:  #29: expected an expression
+        .bit[8] = 18, .bit[9] = 18, .bit[10] = 18, .bit[11] = 18,\
+..\..\lib\drivers\segmentlcd.c(183): error:  #29: expected an expression
+        .bit[8] = 18, .bit[9] = 18, .bit[10] = 18, .bit[11] = 18,\
+..\..\lib\drivers\segmentlcd.c(183): error:  #29: expected an expression
+        .bit[8] = 18, .bit[9] = 18, .bit[10] = 18, .bit[11] = 18,\
+..\..\lib\drivers\segmentlcd.c(184): error:  #29: expected an expression
+        .com[12] = 5, .com[13] = 6,\
+..\..\lib\drivers\segmentlcd.c(184): error:  #29: expected an expression
+        .com[12] = 5, .com[13] = 6,\
+..\..\lib\drivers\segmentlcd.c(185): error:  #29: expected an expression
+        .bit[12] = 17, .bit[13] = 17\
+..\..\lib\drivers\segmentlcd.c(185): error:  #29: expected an expression
+        .bit[12] = 17, .bit[13] = 17\
+..\..\lib\drivers\segmentlcd.c: 1 warning, 30 errors
+".\RTOS-TEST.axf" - 30 Error(s), 1 Warning(s).
+Target not created

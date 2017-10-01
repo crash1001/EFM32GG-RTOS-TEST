@@ -8,10 +8,12 @@
 ".\em_core.o"
 ".\em_system.o"
 ".\em_adc.o"
+".\em_lcd.o"
 ".\list.o"
 ".\tasks.o"
 ".\heap_4.o"
 ".\port.o"
+".\segmentlcd.o"
 --strict --scatter ".\RTOS-TEST.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
