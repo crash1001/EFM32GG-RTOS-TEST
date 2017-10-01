@@ -65,12 +65,13 @@
 .\main.o: C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_uart.h
 .\main.o: C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_af_ports.h
 .\main.o: C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_af_pins.h
+.\main.o: ..\..\lib\emlib\inc\em_chip.h
 .\main.o: ..\..\lib\emlib\inc\em_system.h
 .\main.o: C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h
-.\main.o: ..\..\lib\emlib\inc\em_chip.h
 .\main.o: ..\..\lib\emlib\inc\em_gpio.h
 .\main.o: ..\..\lib\emlib\inc\em_bus.h
 .\main.o: ..\..\lib\emlib\inc\em_assert.h
 .\main.o: ..\..\lib\emlib\inc\em_cmu.h
 .\main.o: ..\..\lib\emlib\inc\em_core.h
 .\main.o: ..\..\lib\emlib\inc\em_common.h
+.\main.o: ..\..\lib\emlib\inc\em_adc.h

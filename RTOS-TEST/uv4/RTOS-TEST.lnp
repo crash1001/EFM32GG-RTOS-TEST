@@ -7,6 +7,7 @@
 ".\em_cmu.o"
 ".\em_core.o"
 ".\em_system.o"
+".\em_adc.o"
 ".\list.o"
 ".\tasks.o"
 ".\heap_4.o"

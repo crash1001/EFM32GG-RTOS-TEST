@@ -56,7 +56,7 @@ I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_dmactrl.h)(0x58EB441A)
 I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_uart.h)(0x58EB441A)
 I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_af_ports.h)(0x58EB441A)
 I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_af_pins.h)(0x58EB441A)
-F (..\src\main.c)(0x59CF29FF)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\..\lib\emlib\inc -I..\..\lib\config -I..\..\lib\RTOS\include -I..\..\lib\RTOS\ARM_CM3 -I..\..\lib\CMSIS\Include -I..\..\..\..\EFM32-demo-codes\lib\emdrv\gpiointerrupt\inc -I..\..\lib\ITM-EFM-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\EnergyMicro\EFM32GG-DEFM32GG980F1024-o .\main.o --omf_browse .\main.crf --depend .\main.d)
+F (..\src\main.c)(0x59CFABFE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\..\lib\emlib\inc -I..\..\lib\config -I..\..\lib\RTOS\include -I..\..\lib\RTOS\ARM_CM3 -I..\..\lib\CMSIS\Include -I..\..\..\..\EFM32-demo-codes\lib\emdrv\gpiointerrupt\inc -I..\..\lib\ITM-EFM-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\EnergyMicro\EFM32GG-DEFM32GG980F1024-o .\main.o --omf_browse .\main.crf --depend .\main.d)
 I (..\..\lib\RTOS\include\FreeRTOS.h)(0x57E39BDD)
 I (C:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7E4F8)
 I (..\..\lib\RTOS\include\projdefs.h)(0x57E39BDD)
@@ -66,7 +66,7 @@ I (..\..\lib\RTOS\ARM_CM3\portmacro.h)(0x57E39BDD)
 I (..\..\lib\RTOS\include\mpu_wrappers.h)(0x57E39BDD)
 I (..\..\lib\RTOS\include\task.h)(0x57E39BDD)
 I (..\..\lib\RTOS\include\list.h)(0x57E39BDD)
-I (..\..\lib\ITM-EFM\ITM.h)(0x59CF1A89)
+I (..\..\lib\ITM-EFM\ITM.h)(0x59CFAB99)
 I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7E4F8)
 I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\em_device.h)(0x58EB441A)
 I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg980f1024.h)(0x58EB441A)
@@ -123,17 +123,18 @@ I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_dmactrl.h)(0x58EB441A)
 I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_uart.h)(0x58EB441A)
 I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_af_ports.h)(0x58EB441A)
 I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_af_pins.h)(0x58EB441A)
+I (..\..\lib\emlib\inc\em_chip.h)(0x58EB441C)
 I (..\..\lib\emlib\inc\em_system.h)(0x59CD3C58)
 I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7E4F8)
-I (..\..\lib\emlib\inc\em_chip.h)(0x58EB441C)
 I (..\..\lib\emlib\inc\em_gpio.h)(0x58EB441C)
 I (..\..\lib\emlib\inc\em_bus.h)(0x58EB441C)
 I (..\..\lib\emlib\inc\em_assert.h)(0x58EB441C)
 I (..\..\lib\emlib\inc\em_cmu.h)(0x58EB441C)
 I (..\..\lib\emlib\inc\em_core.h)(0x58EB441C)
 I (..\..\lib\emlib\inc\em_common.h)(0x58EB441C)
-F (..\..\lib\ITM-EFM\ITM.c)(0x59CF1A9D)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\..\lib\emlib\inc -I..\..\lib\config -I..\..\lib\RTOS\include -I..\..\lib\RTOS\ARM_CM3 -I..\..\lib\CMSIS\Include -I..\..\..\..\EFM32-demo-codes\lib\emdrv\gpiointerrupt\inc -I..\..\lib\ITM-EFM-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\EnergyMicro\EFM32GG-DEFM32GG980F1024-o .\itm.o --omf_browse .\itm.crf --depend .\itm.d)
-I (..\..\lib\ITM-EFM\ITM.h)(0x59CF1A89)
+I (..\..\lib\emlib\inc\em_adc.h)(0x58EB441C)
+F (..\..\lib\ITM-EFM\ITM.c)(0x59CFAB90)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\..\lib\emlib\inc -I..\..\lib\config -I..\..\lib\RTOS\include -I..\..\lib\RTOS\ARM_CM3 -I..\..\lib\CMSIS\Include -I..\..\..\..\EFM32-demo-codes\lib\emdrv\gpiointerrupt\inc -I..\..\lib\ITM-EFM-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\EnergyMicro\EFM32GG-DEFM32GG980F1024-o .\itm.o --omf_browse .\itm.crf --depend .\itm.d)
+I (..\..\lib\ITM-EFM\ITM.h)(0x59CFAB99)
 I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7E4F8)
 I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\em_device.h)(0x58EB441A)
 I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg980f1024.h)(0x58EB441A)
@@ -434,6 +435,68 @@ I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_uart.h)(0x58EB441A)
 I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_af_ports.h)(0x58EB441A)
 I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_af_pins.h)(0x58EB441A)
 I (..\..\lib\emlib\inc\em_assert.h)(0x58EB441C)
+I (C:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7E4F8)
+F (..\..\lib\emlib\src\em_adc.c)(0x58EB441C)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\..\lib\emlib\inc -I..\..\lib\config -I..\..\lib\RTOS\include -I..\..\lib\RTOS\ARM_CM3 -I..\..\lib\CMSIS\Include -I..\..\..\..\EFM32-demo-codes\lib\emdrv\gpiointerrupt\inc -I..\..\lib\ITM-EFM-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\EnergyMicro\EFM32GG-DEFM32GG980F1024-o .\em_adc.o --omf_browse .\em_adc.crf --depend .\em_adc.d)
+I (..\..\lib\emlib\inc\em_adc.h)(0x58EB441C)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\em_device.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg980f1024.h)(0x58EB441A)
+I (..\..\lib\CMSIS\Include\core_cm3.h)(0x58EB4418)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7E4F8)
+I (..\..\lib\CMSIS\Include\core_cmInstr.h)(0x58EB4418)
+I (..\..\lib\CMSIS\Include\cmsis_armcc.h)(0x58EB4418)
+I (..\..\lib\CMSIS\Include\core_cmFunc.h)(0x58EB4418)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\system_efm32gg.h)(0x59CF2536)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_dma_ch.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_dma.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_aes.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_usb_hc.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_usb_diep.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_usb_doep.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_usb.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_msc.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_emu.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_rmu.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_cmu.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_lesense_st.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_lesense_buf.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_lesense_ch.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_lesense.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_rtc.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_letimer.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_ebi.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_usart.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_timer_cc.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_timer.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_acmp.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_i2c.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_gpio_p.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_gpio.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_vcmp.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_prs_ch.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_prs.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_leuart.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_pcnt.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_adc.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_dac.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_lcd.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_burtc_ret.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_burtc.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_wdog.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_etm.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_dma_descriptor.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_devinfo.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_romtable.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_calibrate.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_prs_signals.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_dmareq.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_dmactrl.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_uart.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_af_ports.h)(0x58EB441A)
+I (C:\Keil\ARM\Inc\EnergyMicro\EFM32GG\efm32gg_af_pins.h)(0x58EB441A)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7E4F8)
+I (..\..\lib\emlib\inc\em_assert.h)(0x58EB441C)
+I (..\..\lib\emlib\inc\em_cmu.h)(0x58EB441C)
+I (..\..\lib\emlib\inc\em_bus.h)(0x58EB441C)
 I (C:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7E4F8)
 F (..\..\lib\RTOS\list.c)(0x59CDAB3F)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\..\lib\emlib\inc -I..\..\lib\config -I..\..\lib\RTOS\include -I..\..\lib\RTOS\ARM_CM3 -I..\..\lib\CMSIS\Include -I..\..\..\..\EFM32-demo-codes\lib\emdrv\gpiointerrupt\inc -I..\..\lib\ITM-EFM-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\EnergyMicro\EFM32GG-DEFM32GG980F1024-o .\list.o --omf_browse .\list.crf --depend .\list.d)
 I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7E4F8)

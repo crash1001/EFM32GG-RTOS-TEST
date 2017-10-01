@@ -68,10 +68,10 @@ void itmPrint(char *string) {
 	
 }
 
-void itmPrintInt(volatile int value) {
+void itmPrintNum(float value) {
 	char temp[32];
 	
-	sprintf(temp, "%d", value);
+	sprintf(temp, "%f", value);
 	
 	itmPrint(temp);
 }

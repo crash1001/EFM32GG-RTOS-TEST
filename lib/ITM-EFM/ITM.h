@@ -17,7 +17,7 @@ void SWO_Setup(void);
 
 void itmPrintln(char *string);
 void itmPrint(char *string);
-void itmPrintInt(volatile int value);
+void itmPrintNum(float value);
 	
 #ifdef __cplusplus
 }
